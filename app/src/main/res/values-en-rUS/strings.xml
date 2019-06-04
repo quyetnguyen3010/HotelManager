@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HotelManager</string>
+    <string name="txt_tieude">Choose a date</string>
+    <string name="txt_tongthoigian">nights</string>
+    <string name="txt_nhanphong">Check in</string>
+    <string name="txt_traphong">Check out</string>
+    <string name="txt_year">Year</string>
+    <string name="txt_md">d_m</string>
+</resources>

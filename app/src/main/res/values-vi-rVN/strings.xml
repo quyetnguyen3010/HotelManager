@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HotelManager</string>
+    <string name="txt_tieude">Chọn ngày</string>
+    <string name="txt_tongthoigian">đêm</string>
+    <string name="txt_nhanphong">Nhận phòng</string>
+    <string name="txt_traphong">Trả phòng</string>
+    <string name="txt_year">Năm</string>
+    <string name="txt_md">Thứ, ngày tháng</string>
+</resources>

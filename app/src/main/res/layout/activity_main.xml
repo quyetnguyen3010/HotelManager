@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lntong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_xanhnen"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_tieude"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50"
+            android:background="@color/xanh_tieude"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_clear"
+                android:layout_width="@dimen/size_30"
+                android:layout_height="@dimen/size_30"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_clear" />
+
+            <TextView
+                android:id="@+id/txt_tieude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_tieude"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_tieude"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/txt_tongdem"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_60"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:text="@string/txt_tongthoigian"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_20sp" />
+
+            <ImageView
+                android:id="@+id/im_refres"
+                android:layout_width="@dimen/size_30"
+                android:layout_height="@dimen/size_30"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_refresh" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_nhanphong"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_45"
+                    android:background="@color/color_blue700"
+                    android:gravity="center"
+                    android:text="@string/txt_nhanphong"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_20sp" />
+
+                <TextView
+                    android:id="@+id/txt_nam"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_45"
+                    android:paddingStart="@dimen/size_10"
+                    android:paddingTop="@dimen/size_10"
+                    android:text="@string/txt_year"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_20sp" />
+
+                <TextView
+                    android:id="@+id/txt_thu_thang"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_60"
+                    android:paddingStart="@dimen/size_10"
+                    android:paddingTop="@dimen/size_10"
+                    android:text="@string/txt_md"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#18FFFF">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_traphong"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_45"
+                    android:background="@color/color_blue700"
+                    android:gravity="center"
+                    android:text="@string/txt_traphong"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_20sp" />
+
+                <TextView
+                    android:id="@+id/txt_nam1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_45"
+                    android:paddingStart="@dimen/size_10"
+                    android:paddingTop="@dimen/size_10"
+                    android:text="@string/txt_year"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_20sp" />
+
+                <TextView
+                    android:id="@+id/txt_thu_thang1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_60"
+                    android:paddingStart="@dimen/size_10"
+                    android:paddingTop="@dimen/size_10"
+                    android:text="@string/txt_md"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lntong">
+        <com.squareup.timessquare.CalendarPickerView
+            android:id="@+id/pv_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.squareup.timessquare.CalendarPickerView>
+
+        <!--<com.savvi.rangedatepicker.CalendarPickerView-->
+            <!--android:id="@+id/calendar_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:paddingBottom="16dp"-->
+            <!--android:scrollbarStyle="outsideOverlay"-->
+            <!--android:clipToPadding="false"-->
+            <!--app:tsquare_dividerColor="@color/calendar_bg"-->
+            <!--app:tsquare_headerTextColor="@color/calendar_selected_day_bg"-->
+            <!--/>-->
+    </LinearLayout>
+</RelativeLayout>
